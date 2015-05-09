@@ -10,6 +10,10 @@ public class main {
 		// TODO Auto-generated method stub
 		
 		System.out.println("zzz");
+		System.out.println("zzz");
+		System.out.println("zzz");
+		System.out.println("zzz");
+		System.out.println("zzz");
 		for(int i=0;i<arr.length;i++){
 			if(i == 0){
 				tempStr +="'"+ arr[i].toString()+ "'";
