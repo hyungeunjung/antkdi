@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+ "-//Apache Software Foundation//DTD Tiles Configuration 3.0/EN"
+ "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+ 
+ <!-- Definitions for Tiles documentation -->
+ 
+ <tiles-definitions>
+  
+  <!-- DOC index page description -->
+  <definition name="layout" template="/WEB-INF/views/layout/layout.jsp">
+   <put-attribute name="header" value="/WEB-INF/views/layout/header.jsp"/>
+   <put-attribute name="content" value=""/>
+   <put-attribute name="bottom" value="/WEB-INF/views/layout/bottom.jsp"/>
+  </definition>
+  
+  <definition name="*" extends="layout">
+   <put-attribute name="content" value="/WEB-INF/views/{1}.jsp"/>
+  </definition>
+  <definition name="*/*" extends="layout">
+   <put-attribute name="content" value="/WEB-INF/views/{1}/{2}.jsp"/>
+  </definition>
+  <definition name="*/*/*" extends="layout">
+   <put-attribute name="content" value="/WEB-INF/views/{1}/{2}/{3}.jsp"/>
+  </definition>
+  
+  <definition name="login_duplicate" extends="layout">
+   <put-attribute name="content" value="/WEB-INF/views/login/login_duplicate.jsp"/>
+  </definition>
+  
+  <definition name="logout" >
+   <put-attribute name="content" value="/WEB-INF/views/login/logout.jsp"/>
+  </definition>
+  <definition name="login_sucess" >
+   <put-attribute name="content" value="/WEB-INF/views/login/login_sucess.jsp"/>
+  </definition>
+ 
+  
+ </tiles-definitions>
+
