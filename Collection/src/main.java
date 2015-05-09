@@ -12,7 +12,7 @@ public class main {
 		
 		
 		
-		
+		System.out.println("준비시작");
 
 		for(int i=0;i<arr.length;i++){
 			if(i == 0){
